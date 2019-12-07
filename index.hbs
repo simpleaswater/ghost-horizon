@@ -1,0 +1,406 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+<header class="site-home-header">
+    {{> header-background background=@site.cover_image}}
+    {{!--Special header-image.hbs partial to generate the background image--}}
+    <div class="inner">
+        {{> "site-nav"}}
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {{#if @site.logo}}
+                <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+                {{else}}
+                {{@site.title}}
+                {{/if}}
+            </h1>
+            <h2 class="site-description">{{@site.description}}</h2>
+        </div>
+    </div>
+    </div>
+</header>
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+
+        <div class="post-feed">
+
+            <article class="post-card post tag-getting-started post-card-large">
+
+                <a class="post-card-image-link" href="/ipfs/">
+                    <img class="post-card-image" srcset="/content/images/size/w300/2019/12/saw-ipfs.png 300w,
+                    /content/images/size/w600/2019/12/saw-ipfs.png 600w,
+                    /content/images/size/w1000/2019/12/saw-ipfs.png 1000w,
+                    /content/images/size/w2000/2019/12/saw-ipfs.png 2000w" sizes="(max-width: 1000px) 400px, 700px"
+                        src="/content/images/size/w600/2019/12/saw-ipfs.png" alt="IPFS: Complete Guide">
+                </a>
+
+                <div class="post-card-content">
+
+                    <a class="post-card-content-link" href="/ipfs/">
+
+                        <header class="post-card-header">
+                            <div class="post-card-primary-tag">Complete Guide</div>
+                            <h2 class="post-card-title">IPFS: Complete Guide</h2>
+                        </header>
+
+                        <section class="post-card-excerpt">
+                            <p>Whether you’re just learning how to build peer-to-peer systems with ipfs, want to dive
+                                into peer-to-peer concepts and
+                                solutions, or are looking for ready-to-use examples, this is the place to start.</p>
+                        </section>
+
+                    </a>
+
+                    <footer class="post-card-meta">
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-name-tooltip">
+                                    Vaibhav Saini
+                                </div>
+
+                                <a href="/author/vasa/" class="static-avatar">
+                                    <img class="author-profile-image" src="/content/images/2019/12/profile_med.jpeg"
+                                        alt="Vaibhav Saini">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="post-card-byline-content">
+                            <span><a href="/author/vasa/">Vaibhav Saini</a></span>
+                            <span class="post-card-byline-date"><time datetime="2018-08-20">20 Aug 2018</time>
+                        </div>
+                    </footer>
+
+                </div>
+
+            </article>
+
+
+            <article class="post-card post tag-getting-started ">
+
+                <a class="post-card-image-link" href="/libp2p/">
+                    <img class="post-card-image" srcset="/content/images/size/w300/2019/12/8.png 300w,
+                    /content/images/size/w600/2019/12/8.png 600w,
+                    /content/images/size/w1000/2019/12/8.png 1000w,
+                    /content/images/size/w2000/2019/12/8.png 2000w" sizes="(max-width: 1000px) 400px, 700px"
+                        src="/content/images/size/w600/2019/12/8.png" alt="Libp2p: Complete Guide">
+                </a>
+
+                <div class="post-card-content">
+
+                    <a class="post-card-content-link" href="/libp2p/">
+
+                        <header class="post-card-header">
+                            <div class="post-card-primary-tag">Complete Guide</div>
+                            <h2 class="post-card-title">Libp2p: Complete Guide</h2>
+                        </header>
+
+                        <section class="post-card-excerpt">
+                            <p>Whether you’re just learning how to build peer-to-peer systems with libp2p, want to dive
+                                into peer-to-peer concepts and
+                                solutions, or are looking for ready-to-use examples, this is the place to start.</p>
+                        </section>
+
+                    </a>
+
+                    <footer class="post-card-meta">
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-name-tooltip">
+                                    Vaibhav Saini
+                                </div>
+
+                                <a href="/author/vasa/" class="static-avatar">
+                                    <img class="author-profile-image" src="/content/images/2019/12/profile_med.jpeg"
+                                        alt="Vaibhav Saini">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="post-card-byline-content">
+                            <span><a href="/author/vasa/">Vaibhav Saini</a></span>
+                            <span class="post-card-byline-date"><time datetime="2018-08-20">20 Aug 2018</time>
+                        </div>
+                    </footer>
+
+                </div>
+
+            </article>
+
+
+            <article class="post-card post tag-getting-started ">
+
+                <a class="post-card-image-link" href="/ipld/">
+                    <img class="post-card-image" srcset="/content/images/size/w300/2019/12/9.png 300w,
+                    /content/images/size/w600/2019/12/9.png 600w,
+                    /content/images/size/w1000/2019/12/9.png 1000w,
+                    /content/images/size/w2000/2019/12/9.png 2000w" sizes="(max-width: 1000px) 400px, 700px"
+                        src="/content/images/size/w600/2019/12/9.png" alt="IPLD: Complete Guide">
+                </a>
+
+                <div class="post-card-content">
+
+                    <a class="post-card-content-link" href="/ipld/">
+
+                        <header class="post-card-header">
+                            <div class="post-card-primary-tag">Complete Guide</div>
+                            <h2 class="post-card-title">IPLD: Complete Guide</h2>
+                        </header>
+
+                        <section class="post-card-excerpt">
+                            <p>Whether you’re just learning to use data model of the content-addressable web with IPLD,
+                                want to dive into DAG concepts
+                                , or are looking for ready-to-use IPLD examples, this is the place to start.</p>
+                        </section>
+
+                    </a>
+
+                    <footer class="post-card-meta">
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-name-tooltip">
+                                    Vaibhav Saini
+                                </div>
+
+                                <a href="/author/vasa/" class="static-avatar">
+                                    <img class="author-profile-image" src="/content/images/2019/12/profile_med.jpeg"
+                                        alt="Vaibhav Saini">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="post-card-byline-content">
+                            <span><a href="/author/vasa/">Vaibhav Saini</a></span>
+                            <span class="post-card-byline-date"><time datetime="2018-08-20">20 Aug 2018</time>
+                        </div>
+                    </footer>
+
+                </div>
+
+            </article>
+
+
+            <article class="post-card post tag-getting-started ">
+
+                <a class="post-card-image-link" href="/ipfs-cluster/">
+                    <img class="post-card-image" srcset="/content/images/size/w300/2019/12/10.png 300w,
+                    /content/images/size/w600/2019/12/10.png 600w,
+                    /content/images/size/w1000/2019/12/10.png 1000w,
+                    /content/images/size/w2000/2019/12/10.png 2000w" sizes="(max-width: 1000px) 400px, 700px"
+                        src="/content/images/size/w600/2019/12/10.png" alt="IPFS Cluster: Complete Guide">
+                </a>
+
+                <div class="post-card-content">
+
+                    <a class="post-card-content-link" href="/ipfs-cluster/">
+
+                        <header class="post-card-header">
+                            <div class="post-card-primary-tag">Complete Guide</div>
+                            <h2 class="post-card-title">IPFS Cluster: Complete Guide</h2>
+                        </header>
+
+                        <section class="post-card-excerpt">
+                            <p>Whether you’re just looking to use IPFS for production systems, want to dive into how to
+                                manage multiple ipfs nodes, or
+                                are looking for ready-to-use examples, this is the place to start.</p>
+                        </section>
+
+                    </a>
+
+                    <footer class="post-card-meta">
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-name-tooltip">
+                                    Vaibhav Saini
+                                </div>
+
+                                <a href="/author/vasa/" class="static-avatar">
+                                    <img class="author-profile-image" src="/content/images/2019/12/profile_med.jpeg"
+                                        alt="Vaibhav Saini">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="post-card-byline-content">
+                            <span><a href="/author/vasa/">Vaibhav Saini</a></span>
+                            <span class="post-card-byline-date"><time datetime="2018-08-20">20 Aug 2018</time>
+                        </div>
+                    </footer>
+
+                </div>
+
+            </article>
+
+
+            <article class="post-card post tag-getting-started ">
+
+                <a class="post-card-image-link" href="/multiformats/">
+                    <img class="post-card-image" srcset="/content/images/size/w300/2019/12/1.png 300w,
+                    /content/images/size/w600/2019/12/1.png 600w,
+                    /content/images/size/w1000/2019/12/1.png 1000w,
+                    /content/images/size/w2000/2019/12/1.png 2000w" sizes="(max-width: 1000px) 400px, 700px"
+                        src="/content/images/size/w600/2019/12/1.png" alt="Multiformats: Complete Guide">
+                </a>
+
+                <div class="post-card-content">
+
+                    <a class="post-card-content-link" href="/multiformats/">
+
+                        <header class="post-card-header">
+                            <div class="post-card-primary-tag">Complete Guide</div>
+                            <h2 class="post-card-title">Multiformats: Complete Guide</h2>
+                        </header>
+
+                        <section class="post-card-excerpt">
+                            <p>Whether you’re just learning how to build future-proof systems with Multiformats, want to
+                                dive into future-proofing
+                                concepts, or are looking examples for Multiformat protocols, this is the place to start.
+                            </p>
+                        </section>
+
+                    </a>
+
+                    <footer class="post-card-meta">
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-name-tooltip">
+                                    Vaibhav Saini
+                                </div>
+
+                                <a href="/author/vasa/" class="static-avatar">
+                                    <img class="author-profile-image" src="/content/images/2019/12/profile_med.jpeg"
+                                        alt="Vaibhav Saini">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="post-card-byline-content">
+                            <span><a href="/author/vasa/">Vaibhav Saini</a></span>
+                            <span class="post-card-byline-date"><time datetime="2018-08-20">20 Aug 2018</time>
+                        </div>
+                    </footer>
+
+                </div>
+
+            </article>
+
+
+            <article class="post-card post tag-getting-started ">
+
+                <a class="post-card-image-link" href="/filecoin/">
+                    <img class="post-card-image" srcset="/content/images/size/w300/2019/12/11.png 300w,
+                    /content/images/size/w600/2019/12/11.png 600w,
+                    /content/images/size/w1000/2019/12/11.png 1000w,
+                    /content/images/size/w2000/2019/12/11.png 2000w" sizes="(max-width: 1000px) 400px, 700px"
+                        src="/content/images/size/w600/2019/12/11.png" alt="Filecoin: Complete Guide">
+                </a>
+
+                <div class="post-card-content">
+
+                    <a class="post-card-content-link" href="/filecoin/">
+
+                        <header class="post-card-header">
+                            <div class="post-card-primary-tag">Complete Guide</div>
+                            <h2 class="post-card-title">Filecoin: Complete Guide</h2>
+                        </header>
+
+                        <section class="post-card-excerpt">
+                            <p>Whether you’re just learning how to build and use your own decentralised storage market
+                                place, want to dive into how it
+                                works, or are looking examples for how to use Filecoin, this is the place to start.</p>
+                        </section>
+
+                    </a>
+
+                    <footer class="post-card-meta">
+                        <ul class="author-list">
+                            <li class="author-list-item">
+
+                                <div class="author-name-tooltip">
+                                    Vaibhav Saini
+                                </div>
+
+                                <a href="/author/vasa/" class="static-avatar">
+                                    <img class="author-profile-image" src="/content/images/2019/12/profile_med.jpeg"
+                                        alt="Vaibhav Saini">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="post-card-byline-content">
+                            <span><a href="/author/vasa/">Vaibhav Saini</a></span>
+                            <span class="post-card-byline-date"><time datetime="2018-08-20">20 Aug 2018</time>
+                        </div>
+                    </footer>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</main>
+
+{{> site-header}}
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+{{#contentFor "scripts"}}
+<script>
+
+    // NOTE: Scroll performance is poor in Safari
+    // - this appears to be due to the events firing much more slowly in Safari.
+    //   Dropping the scroll event and using only a raf loop results in smoother
+    //   scrolling but continuous processing even when not scrolling
+    $(document).ready(function () {
+
+        var nav = document.querySelector('.site-nav-main .site-nav');
+        var feed = document.querySelector('.post-feed');
+
+        var lastScrollY = window.scrollY;
+        var lastWindowHeight = window.innerHeight;
+        var lastDocumentHeight = $(document).height();
+        var ticking = false;
+
+        function onScroll() {
+            lastScrollY = window.scrollY;
+            requestTick();
+        }
+
+        function onResize() {
+            lastWindowHeight = window.innerHeight;
+            lastDocumentHeight = $(document).height();
+            requestTick();
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(update);
+            }
+            ticking = true;
+        }
+
+        function update() {
+            var trigger = feed.getBoundingClientRect().top + window.scrollY;
+            var progressMax = lastDocumentHeight - lastWindowHeight;
+
+            // show/hide nav
+            if (lastScrollY >= trigger - 20) {
+                nav.classList.add('fixed-nav-active');
+            } else {
+                nav.classList.remove('fixed-nav-active');
+            }
+
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onResize, false);
+
+        update();
+
+    });
+</script>
+{{/contentFor}}
